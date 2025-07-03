@@ -39,71 +39,6 @@
     100% { opacity: 0.2; }
     }
 
-    .floating-squares {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      pointer-events: none;
-      z-index: -2;
-    }
-
-    .square {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      animation: floatSquare 20s linear infinite;
-      transform: rotate(45deg);
-    }
-
-    /* Randomized positions and delays */
-    .square:nth-child(1) {
-      top: 20%;
-      left: 10%;
-      animation-delay: 0s;
-    }
-
-    .square:nth-child(2) {
-      top: 40%;
-      left: 80%;
-      animation-delay: 5s;
-    }
-
-    .square:nth-child(3) {
-      top: 60%;
-      left: 30%;
-      animation-delay: 10s;
-    }
-
-    .square:nth-child(4) {
-      top: 80%;
-      left: 60%;
-      animation-delay: 15s;
-    }
-
-    .square:nth-child(5) {
-      top: 50%;
-      left: 50%;
-      animation-delay: 2s;
-    }
-
-    @keyframes floatSquare {
-      0% {
-        transform: translateY(0) rotate(45deg);
-        opacity: 0.1;
-      }
-      50% {
-        opacity: 0.3;
-      }
-      100% {
-        transform: translateY(-100vh) rotate(135deg);
-        opacity: 0;
-      }
-    }
 
 
     .lead {
@@ -217,12 +152,7 @@
 
   <div class="stars"></div>
 
-  <div class="floating-squares">
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <div class="square"></div>
+
 </div>
 
   <!-- Navbar -->
